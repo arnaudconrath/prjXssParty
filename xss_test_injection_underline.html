@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" dir="ltr">
+    <head>
+        <title>My static website</title>
+    </head>
+    <body>
+        <form name="myform" action="http://testphp.vulnweb.com/search.php?test=query" method="post">
+            <input type="hidden" name="searchFor" value="<u>">
+            <input type="hidden" name="goButton" value="go" >
+            <input type="submit" value="Submit" />
+        </form>
+        <script>
+            document.myform.submit();
+        </script>
+    </body>
+</html>
